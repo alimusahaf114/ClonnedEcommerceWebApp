@@ -1,9 +1,10 @@
 import React from 'react';
 import "./App.jsx"
+import Home from './pages/Home.jsx';
 const App = () => {
   return (
     <div>
-      <h1 className='bg-blue-500 text-white'>Hello World</h1>
+     <Home />
     </div>
   );
 }
