@@ -1,1 +1,44 @@
 @import "tailwindcss";
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.pagesMenu{
+    position: relative;
+}
+.pages:hover{
+    color: blue;
+}
+.nestedList{
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: white;
+    list-style: none;
+    min-width: 150px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.pagesMenu:hover .nestedList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+    .pagesMenu .nestedList li a{
+        display: block;
+        padding: 6px;
+        width: 100%;
+        border-radius: 7px;
+    }
+.pagesMenu:hover .nestedList li a:hover{
+
+    background-color: rgb(231, 231, 231);
+   color: blue;
+}

@@ -20,10 +20,21 @@ const Navbar = () => {
         <span>Commerce</span>
       </div>
       <div className='flex justify-between items-center  '>
-        <ul className='flex gap-6 text-sm'>
+        <ul className='outerList flex gap-6 text-sm'>
             <li><a href="#">Popular</a></li>
             <li><a href="#">Shop</a></li>
-            <li><a href="#">Pages</a></li>
+            <li className='pagesMenu'><a href="#" className='pages'>Pages</a>
+            <ul className='nestedList'>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Sign in </a></li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Error</a></li>
+              <li><a href="#">Mail success</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            </li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
