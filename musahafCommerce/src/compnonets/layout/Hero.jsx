@@ -1,10 +1,11 @@
 import React from "react";
+import heroImg from "../../assets/images/profile.png";
 
 const Hero = () => {
   return (
     <div>
-      <div className="previewProduct flex items-center ">
-        <div className="productCardPreview w-1/2 p-20px bg-gray-100 flex items-center">
+      <div className="previewProduct p-10 flex items-center ">
+        <div className="productCardPreview w-[50rem] h-100 p-10 bg-gray-100 flex items-center">
           <div className="info ">
             <div>
               <span>20%</span>
@@ -22,7 +23,7 @@ const Hero = () => {
             <button>Shop Now</button>
           </div>
           <div className="imagePreview">
-            <img src="../.././assets/images/profile.png" alt="Musahaf" />
+            <img src={heroImg} alt="Musahaf" />
           </div>
         </div>
       </div>
