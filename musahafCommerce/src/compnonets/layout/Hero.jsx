@@ -1,5 +1,6 @@
 import React from "react";
 import heroImg from "../../assets/images/profile.png";
+import ProductCard from "../product/ProductCard";
 
 const Hero = () => {
   return (
@@ -27,40 +28,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="sideCard flex flex-col gap-3">
-          <div className="card w-[23rem] rounded-lg h-50 p-2 bg-gray-100 flex items-center">
-            <div className="info">
-              <div className="mobDetail">
-                <h2>iPhone 16 Pro & <br /> 16 Pro Max</h2>
-              <span>Get your desired phone 
-               <br /> from desired category</span>
-              </div>
-              <div className="mobPrice">
-                <span>LIMITED TIME OFFER</span>
-                <span>$600</span>
-                <span>$898</span>
-              </div>
-            </div>
-            <div className="imagePreview w-1/2">
-            <img src={heroImg} alt="Musahaf" />
-          </div>
-          </div>
-          <div className="card w-[23rem] rounded-lg h-50 p-2 bg-gray-100 flex items-center">
-            <div className="info">
-              <div className="mobDetail">
-                <h2>iPhone 16 Pro & <br /> 16 Pro Max</h2>
-              <span>Get your desired phone 
-               <br /> from desired category</span>
-              </div>
-              <div className="mobPrice">
-                <span>LIMITED TIME OFFER</span>
-                <span>$600</span>
-                <span>$898</span>
-              </div>
-            </div>
-            <div className="imagePreview w-1/2">
-            <img src={heroImg} alt="Musahaf" />
-          </div>
-          </div>
+         <ProductCard />
+         <ProductCard />
         </div>
       </div>
     </div>
